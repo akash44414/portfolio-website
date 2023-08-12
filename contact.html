@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(70,70,194);
+}
+
+.contact-section, .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-card, .form-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+.contact-card h2, .form-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-details strong {
+    color: #333;
+}
+
+.form-container form {
+    text-align: left;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .contact-card, .form-container {
+        width: 80%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <div class="contact-details">
+                <p><strong>Name:</strong> Akash Srivastava</p>
+                <p><strong>Email:</strong> akashsrivastava44414@gmail.com</p>
+                <p><strong>Phone:</strong> 9120997588</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
